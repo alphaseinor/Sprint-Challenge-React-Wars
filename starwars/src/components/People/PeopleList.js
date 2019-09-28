@@ -24,7 +24,7 @@ export function PeopleList(){
     <Row>
       {people.map(person => { 
         return(
-          <Col sm="1" md="3">
+          <Col>
             <PeopleCard 
               key={person.id}
               name={person.name}
