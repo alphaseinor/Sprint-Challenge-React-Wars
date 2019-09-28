@@ -1,0 +1,17 @@
+.card{
+  height:40vh;
+}
+
+.card-body{
+  background-color: #ddd398;
+}
+
+.card-title{
+  background-color: #524d34;
+  color: #ddd398;
+  border: 1px solid black;
+  border-radius: .5rem;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+

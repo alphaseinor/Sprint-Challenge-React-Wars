@@ -1,15 +1,17 @@
 import React from 'react';
-import {Card, CardImg, CardText, CardBody,
+import {Card, CardText, CardBody,
   CardTitle, CardSubtitle} from 'reactstrap'
 
 export function PeopleCard(props){
   return(
-    <Card key={props.id}>
-      <CardBody>
-        <CardTitle>{props.name}</CardTitle>
-        <CardSubtitle>Height: {props.height} Weight: {props.mass}</CardSubtitle>
-        <CardText>{props.name} is a {props.hair_color} {props.gender}, his skin color is {props.skin_color}</CardText>
+    <div key={props.id}>
+    <Card className="card" >
+      <CardBody className="card-body" height="100%">
+        <CardTitle className="card-title">{props.name}</CardTitle>
+        <CardSubtitle className="card-subtitle">Height: {props.height} Weight: {props.mass}</CardSubtitle>
+        <CardText className="card-text" height="100%">{props.name} is a {props.hair_color} {props.gender}, his skin color is {props.skin_color}</CardText>
       </CardBody>
     </Card>
+    </div>
   )
 }

@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {Row, Col} from 'reactstrap';
 import {PeopleCard} from './PeopleCard';
 import axios from 'axios';
+import '../StarWars.css';
 
 export function PeopleList(){
   const [people, setPerson] = useState([]);
@@ -10,7 +11,7 @@ export function PeopleList(){
     axios.get(`https://swapi.co/api/people/`)
     .then(res => {
       setPerson(res.data.results)
-      console.log(res.data.results)
+      console.log(res.data)
     })
     .catch(err => {
       console.log(err)
@@ -24,7 +25,7 @@ export function PeopleList(){
     <Row>
       {people.map(person => { 
         return(
-          <Col>
+          <Col pb="5" xs="12" lg="4" xl="2" height="100%">
             <PeopleCard 
               key={person.id}
               name={person.name}
