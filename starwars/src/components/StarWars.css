@@ -1,5 +1,6 @@
+
 .card{
-  height:40vh;
+  height: 100%;
 }
 
 .card-body{
@@ -13,5 +14,16 @@
   border-radius: .5rem;
   font-weight: bolder;
   font-size: 2rem;
+}
+
+.card-subtitle{
+  background-color: #524d34;
+  color: #ddd398;
+  font-size: .75rem;
+}
+
+.card-text{
+  border: 1px dashed black;
+  font-size: .8rem;
 }
 

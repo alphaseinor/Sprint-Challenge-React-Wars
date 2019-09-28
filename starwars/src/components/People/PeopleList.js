@@ -27,8 +27,8 @@ export function PeopleList(){
         return(
           <Col pb="5" xs="12" lg="4" xl="2" height="100%">
             <PeopleCard 
-              key={person.id}
               name={person.name}
+              key={person.id}
               height={person.height}
               mass={person.mass}
               hair_color={person.hair_color}
