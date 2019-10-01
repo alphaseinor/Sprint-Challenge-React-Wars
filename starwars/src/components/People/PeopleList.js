@@ -23,12 +23,11 @@ export function PeopleList(){
 
   return(
     <Row>
-      {people.map(person => { 
+      {people.map((person, index) => { 
         return(
-          <Col pb="5" xs="12" lg="4" xl="2" height="100%">
+          <Col key={index} pb="5" xs="12" lg="4" xl="2" height="100%">
             <PeopleCard 
               name={person.name}
-              key={person.id}
               height={person.height}
               mass={person.mass}
               hair_color={person.hair_color}

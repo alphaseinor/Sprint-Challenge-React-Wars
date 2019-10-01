@@ -5,6 +5,7 @@ import {Card, CardText, CardBody,
 export function PeopleCard(props){
   return(
     <Card className="card" key={props.id}>
+
       <CardBody className="card-body" height="100%">
         <CardTitle className="card-title">{props.name}</CardTitle>
         <CardSubtitle className="card-subtitle">Height: {props.height} Weight: {props.mass}</CardSubtitle>
