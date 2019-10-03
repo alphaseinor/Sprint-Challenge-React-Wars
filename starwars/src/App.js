@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import {Container, Row, Col} from 'reactstrap';
+import {PeopleList} from './components/People/PeopleList';
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -11,7 +13,14 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">React Wars</h1>
+      <Container>
+        <Col>
+          <Row>
+            <h1 className="Header">React Wars</h1>
+          </Row>
+          <PeopleList />
+        </Col>
+      </Container>
     </div>
   );
 }
